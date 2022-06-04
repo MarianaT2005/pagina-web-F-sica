@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <div>
+        <center class="titu">Comentarios</center><br><br>
+    </div>
+    <br>
+    <h3 id="mensaje"></h3>
+    <div id="modal">
+        <form id="alumnos">
+        <div>
+            <p class="cu"><b>Datos del Alumno</b></p>
+        </div>
+
+        <div class="cu1">
+            Nombre del Alumno:<input type="text" id="nombre" placeholder="Nombre" required>
+            
+        </div>
+    
+        <div class="cu1">
+            Grupo:<select id="grupos" placeholder="Grupo" required>
+                <option value="4PRAM">4PRAM</option>
+                <option value="4PRBM">4PRBM</option>
+                <option value="4PRAV">4PRAV</option>
+                <option value="4PRBV">4PRBV</option>
+                <option value="4PRCV">4PRCV</option>
+                </select>
+        </div>
+
+
+        <div class="cu1">
+            Fecha de Nacimiento:<input type="date" id="fecha" name="expiration" placeholder="Fecha de nacimiento" required
+            value="2003-03-01" max="2010-01-01" min="2001-01-01">
+            <br>
+        <textarea class="comentarios" name="" id="comentari" cols="40" rows="20" placeholder="Escribe un comentario" ></textarea>
+        </div>
+
+        <br><br>
+    <input type="submit" value="Agregar" id="guardar" onclick="guardar" class="boton">
+    </form>
+        </div>
+    <div id="menu">
+        <nav>
+            <input type="button" value="Agregar" id="btnAgrega" class="botonA">
+        </nav>
+    </div>
+        <br><br>
+        <table id="form">
+            <thead>
+                <th class="th">N° Comentario</th>
+                <th class="th">Nombre del Alumno</th>
+                <th class="th">Grupo</th>
+                <th class="th">Fecha</th>
+                <th class="th">Comentario</th>
+                <th class="th">Acciones</th>
+            </thead>
+            <tbody id="datos">
+
+            </tbody>
+        </table>
+        <script src="index.js"></script>
+        <script src="funciones.js"></script>
+</body>
+<br><br>
+<a href="index.html" class="t"><b>Regresar al Menú</b></a><br></li>
+</html>
